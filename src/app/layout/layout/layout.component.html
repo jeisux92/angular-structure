@@ -1,0 +1,16 @@
+<div fxLayout='row' class="container container-border">
+    <div fxFlex=30 fxFlex.sm=40 class="side-bar-container">
+        <one-side-bar></one-side-bar>
+    </div>
+    <div fxFlex=70 fxFlex.sm=60 fxLayoutAlign="center baseline">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<div fxLayout='row' class="container" fxLayoutAlign="end center">
+    <div>
+        <one-footer></one-footer>
+    </div>
+</div>
+<div class="spiner-container" *ngIf="state">
+    <mat-spinner></mat-spinner>
+</div>

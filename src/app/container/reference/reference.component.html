@@ -1,0 +1,129 @@
+<div class="container">
+  <div class="description" fxLayoutAlign="start start">
+    <img src="../assets/icons/email.png" alt="">
+    <pre>
+      <strong>Enviaremos una notificación a tus referencias</strong>
+      Una vez confirmen se realizará el desembolso de tu ceredito.
+    </pre>
+  </div>
+
+  <div class="div-references" fxLayout="row" fxLayoutAlign="space-between center">
+
+    <form [formGroup]="referenceForm">
+
+      <div class="reference">
+        <p>Referencia 1</p>
+        <div class="div-inputs" fxLayout="column" fxLayoutAlign="space-evenly start">
+          <mat-form-field floatLabel="always" class="example-full-width">
+            <mat-label>Primer nombre</mat-label>
+            <input matInput placeholder="Ej. Andrés" formControlName="firtname">
+          </mat-form-field>
+  
+          <mat-form-field floatLabel="always" class="example-full-width">
+            <mat-label>Segundo nombre</mat-label>
+            <input matInput placeholder="Ej. Camilo" formControlName="secondname">
+          </mat-form-field>
+  
+          <mat-form-field floatLabel="always" class="example-full-width">
+            <mat-label>Primer apellido</mat-label>
+            <input matInput placeholder="Ej. Chacoa" formControlName="firtlastname">
+          </mat-form-field>
+  
+          <mat-form-field floatLabel="always" class="example-full-width">
+            <mat-label>Segundo apellido</mat-label>
+            <input matInput placeholder="Ej. Ruiz" formControlName="secondlastname">
+          </mat-form-field>
+  
+          <mat-form-field floatLabel="always" class="example-full-width">
+            <mat-label>E-mail:</mat-label>
+            <input matInput placeholder="Ej. micorreo@corre.com" formControlName="email">
+          </mat-form-field>
+  
+          <mat-form-field floatLabel="always" class="example-full-width">
+            <mat-label>Celular</mat-label>
+            <input matInput placeholder="Ej. 3203084192" formControlName="phone">
+          </mat-form-field>
+        </div>
+      </div>
+    </form>
+
+    <div class="separator"></div>
+
+    <div class="reference">
+      <p>Referencia 2</p>
+      <div class="div-inputs" fxLayout="column" fxLayoutAlign="space-evenly start">
+        <mat-form-field floatLabel="always" class="example-full-width">
+          <mat-label>Primer nombre</mat-label>
+          <input matInput placeholder="Ej. Andrés">
+        </mat-form-field>
+
+        <mat-form-field floatLabel="always" class="example-full-width">
+          <mat-label>Segundo nombre</mat-label>
+          <input matInput placeholder="Ej. Camilo">
+        </mat-form-field>
+
+        <mat-form-field floatLabel="always" class="example-full-width">
+          <mat-label>Primer apellido</mat-label>
+          <input matInput placeholder="Ej. Chacoa">
+        </mat-form-field>
+
+        <mat-form-field floatLabel="always" class="example-full-width">
+          <mat-label>Segundo apellido</mat-label>
+          <input matInput placeholder="Ej. Ruiz">
+        </mat-form-field>
+
+        <mat-form-field floatLabel="always" class="example-full-width">
+          <mat-label>E-mail</mat-label>
+          <input matInput placeholder="Ej. micorreo@corre.com">
+        </mat-form-field>
+
+        <mat-form-field floatLabel="always" class="example-full-width">
+          <mat-label>Celular</mat-label>
+          <input matInput placeholder="Ej. 3203084192">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="reference">
+      <p>Codeudor</p>
+      <div class="div-inputs" fxLayout="column" fxLayoutAlign="space-evenly start">
+        <mat-form-field floatLabel="always" class="example-full-width">
+          <mat-label>Primer nombre</mat-label>
+          <input matInput placeholder="Ej. Andrés">
+        </mat-form-field>
+
+        <mat-form-field floatLabel="always" class="example-full-width">
+          <mat-label>Segundo nombre</mat-label>
+          <input matInput placeholder="Ej. Camilo">
+        </mat-form-field>
+
+        <mat-form-field floatLabel="always" class="example-full-width">
+          <mat-label>Primer apellido</mat-label>
+          <input matInput placeholder="Ej. Chacoa">
+        </mat-form-field>
+
+        <mat-form-field floatLabel="always" class="example-full-width">
+          <mat-label>Segundo apellido</mat-label>
+          <input matInput placeholder="Ej. Ruiz">
+        </mat-form-field>
+
+        <mat-form-field floatLabel="always" class="example-full-width">
+          <mat-label>E-mail</mat-label>
+          <input matInput placeholder="Ej. micorreo@corre.com">
+        </mat-form-field>
+
+        <mat-form-field floatLabel="always" class="example-full-width">
+          <mat-label>Celular</mat-label>
+          <input matInput placeholder="Ej. 3203084192">
+        </mat-form-field>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="div-button">
+    <button mat-raised-button color=primary (click)="toReadOnly()" [disabled]="!referenceForm.valid">Continuar</button>
+  </div>
+</div>

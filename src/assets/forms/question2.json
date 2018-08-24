@@ -1,0 +1,5 @@
+{
+    "id": 2,
+    "question": "Hola {0}, cuáles son tus apellidos",
+    "isTemplate": true
+}

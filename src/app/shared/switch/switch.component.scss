@@ -1,0 +1,81 @@
+@import '~@angular/material/theming';
+@import 'src/one.theme.scss';
+@import 'src/assets/color-palett.scss';
+$primary-color: mat-color($one-app-primary);
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 271.3px;
+    height: 44px;
+    background: $disabled-text;
+    display: block;
+    border-radius: 5.5px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: calc(271.3px / 2);
+    height: 44px;
+    background: $primary-color;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+input:checked+label {
+    background: $disabled-text;
+}
+
+input:checked+label:after {
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 130px;
+}
+
+// centering
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input:checked+span {
+    color: red;
+}
+
+span {
+    position: relative;
+    bottom: 31px;
+    color: white;
+    cursor: pointer;
+    text-indent: -9999px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    &.first-label {
+        left: 18px;
+    }
+    &.second-label{
+        left: 76px;
+    }
+}

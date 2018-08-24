@@ -1,0 +1,27 @@
+<div class="chatbot" fxLayout=column fxLayoutAlign="flex-end end">
+  <div class="message-container">
+    <ul>
+      <li *ngFor="let message of messages">
+        <div class="message" [ngClass]="{'received' : message.sender=='received' , 'sent' : message.sender == 'sent'}" [innerHtml]="message.message">
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+  <hr>
+  <div fxLayout=row fxLayoutAlign="space-between center">
+    <img src="assets/icons/add.png" alt="Adjuntar" (click)="sa.click">
+    <input type="file" name="" id="" hidden #sa>
+    <form action="">
+      <mat-form-field floatLabel="never" [hideRequiredMarker]="true">
+        <input matInput #ctrl [type]="question?.type ? question.type : 'text'" name="first" [(ngModel)]="message" placeholder="¡Habla con nosotros!"
+          class="placeholder-input" (keyup.enter)="ctrl.value && send(true)">
+      </mat-form-field>
+    </form>
+    <img src="assets/icons/arrow.png" alt="Enviar" (click)="ctrl.value && send(true)" [ngStyle]="{'cursor' : ctrl.value ? 'pointer' : ''}">
+  </div>
+  <div class="cam">
+    <one-cam *ngIf="video" (photo)="putPhoto($event)"></one-cam>
+
+  </div>
+</div>

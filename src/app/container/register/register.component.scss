@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+@import 'src/one.theme.scss';
+@import 'src/assets/color-palett.scss';
+.container-register {
+    padding-top: 15px;
+    width: 55vw;
+    margin: 32px auto;
+    hr {
+        border: 1px solid $disabled-text;
+    }
+}

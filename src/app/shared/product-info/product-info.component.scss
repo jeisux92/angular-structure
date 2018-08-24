@@ -1,0 +1,31 @@
+@import '~@angular/material/theming';
+@import 'src/one.theme.scss';
+@import 'src/assets/color-palett.scss';
+$primary-color:mat-color($one-app-primary);
+.product-info {
+    img {
+        width: 214.5px;
+        height: 134.25px;
+    }
+    h5 {
+        color: $text;
+    }
+    .info {
+        img {
+            width: auto;
+            height: auto;
+        }
+        span {
+            font-size: 14px;
+            color: $disabled-text;
+            a {
+                text-decoration: none;
+                color: $disabled-text;
+                &::visited {
+                    text-decoration: none;
+                    color: $disabled-text;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+<div class="container-register">
+  <one-switch (state)="switch($event)" [stateI]="state"></one-switch>
+  <hr>
+  <one-chatbot *ngIf="!state" [question]="question" (answered)="saveAnswwer($event)"></one-chatbot>
+  <one-login *ngIf="state"></one-login>
+</div>

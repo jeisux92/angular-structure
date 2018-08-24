@@ -1,0 +1,29 @@
+@import '~@angular/material/theming';
+@import 'src/one.theme.scss';
+@import 'src/assets/color-palett.scss';
+$primary-color: mat-color($one-app-primary);
+.final-container {
+    width: 212px;
+    display: block;
+    margin: 70px auto;
+    >div {
+        border: 1px solid $primary-color;
+        border-radius: 8px;
+        height: 14vh;
+        text-align: center;
+        margin-bottom: 45px;
+        img {
+            top: 150px;
+            position: absolute;
+            z-index: 100;
+            background-color: #FFFFFF;
+            width: 27px;
+            display: block;
+        }
+        h3,
+        h6 {
+            color: $primary-color;
+            margin: 4px 0;
+        }
+    }
+}

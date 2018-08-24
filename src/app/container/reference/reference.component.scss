@@ -1,0 +1,50 @@
+@import '~@angular/material/theming';
+@import 'src/one.theme.scss';
+@import 'src/assets/color-palett.scss';
+$primary-color: mat-color($one-app-primary);
+.container {
+    margin: 30px 0;
+    width: 55vw;
+    .description {
+        pre {
+            color: $primary-color;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            line-height: 24px;
+            width: 666px;
+            text-align: left;
+        }
+    }
+    .div-references {
+        .reference {
+            mat-form-field {
+                font-style: italic;
+            }
+            p {
+                color: $primary-color;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: left;
+            }
+        }
+        .separator {
+            border: 1px solid $text-strong;
+            opacity: 0.3;
+            width: 0.1px;
+            height: 410px;
+            margin-right: 20px;
+        }
+    }
+    .div-button {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 35Fpx;
+        button {
+            border-radius: 4px;
+            width: 217px;
+            margin: 10px 0;
+        }
+    }
+}

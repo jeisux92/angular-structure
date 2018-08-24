@@ -1,0 +1,26 @@
+<div class="container">
+    <p class="title">Login con Banlinea One</p>
+
+    <p class="description">El banco Accendo usa Banlinea One para registrar a sus clientes, conoce más</p>
+
+    <div class="div-logo-one">
+        <img src="assets/images/one_logo.png" alt="">
+    </div>
+
+    <form [formGroup]="loginForm" class="example-form" fxLayout="column" fxLayoutAlign="space-between center">
+        <input id="cellphone" formControlName="cellphone" placeholder="Ingrese su número de celular" minlength="10" maxlength="10"
+            required>
+        <mat-error *ngIf="!loginForm.controls.cellphone.valid && loginForm.controls.cellphone.touched">El número debe ser de 10 dígitos</mat-error>
+        <input formControlName="password" placeholder="Contraseña" type="password" required>
+    </form>
+
+    <div class="div-button">
+        <button type=submit mat-raised-button (click)="toOtp()" [disabled]="!loginForm.valid">
+            <div fxLayout="row" fxLayoutAlign="space-around start">
+                <img src="assets/images/icon_banlinea_white.png" alt=""> Ingresar con Banlinea One
+            </div>
+        </button>
+    </div>
+
+    <p class="conocer-mas-sobre-ba">Conocer más sobre Banlinea One</p>
+</div>

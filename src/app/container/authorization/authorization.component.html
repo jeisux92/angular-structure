@@ -1,0 +1,77 @@
+<div class="container">
+	<div class="description">
+		<img src="../assets/images/one_logo.png" alt="">
+		<p>Accendo Banco está solicitando la siguiente información para continuar con tu solicitud de tarjeta de crédito</p>
+	</div>
+
+	<div class="info-user">
+		<mat-accordion>
+			<mat-expansion-panel>
+				<mat-expansion-panel-header class="gris">
+					<mat-panel-title>
+						<mat-slide-toggle (click)="$event.stopPropagation();" [checked]="true">Datos personales</mat-slide-toggle>
+					</mat-panel-title>
+				</mat-expansion-panel-header>
+
+				<div class="info-user-authorization" fxLayoutGap="1% grid">
+					<mat-form-field>
+						<input matInput placeholder="Primer nombre" value="Andrés">
+					</mat-form-field>
+					<mat-form-field>
+						<input matInput placeholder="Segundo nombre" value="Camilo">
+					</mat-form-field>
+
+					<mat-form-field>
+						<input matInput placeholder="Primer apellido" value="Chacoa">
+					</mat-form-field>
+					<mat-form-field>
+						<input matInput placeholder="Segundo apellido" value="Ruiz">
+					</mat-form-field>
+					<mat-form-field>
+						<input matInput placeholder="Correo" value="micorreo.ideal@correo.com">
+					</mat-form-field>
+					<mat-form-field>
+						<input matInput placeholder="Telefono" value="+573203084150">
+					</mat-form-field>
+					<mat-form-field>
+						<input matInput placeholder="Código" value="GMVLMR80070501M100">
+					</mat-form-field>
+
+					<mat-form-field>
+						<input matInput placeholder="Ciudad" value="Ciudad de México">
+					</mat-form-field>
+
+
+				</div>
+			</mat-expansion-panel>
+			<mat-expansion-panel>
+				<mat-expansion-panel-header>
+					<mat-panel-title>
+						<mat-slide-toggle (click)="$event.stopPropagation();" [checked]="true">Datos Financieros</mat-slide-toggle>
+					</mat-panel-title>
+				</mat-expansion-panel-header>
+			</mat-expansion-panel>
+			<mat-expansion-panel>
+				<mat-expansion-panel-header class="gris">
+					<mat-panel-title>
+						<mat-slide-toggle (click)="$event.stopPropagation();" [checked]="true">Datos Adicionales</mat-slide-toggle>
+					</mat-panel-title>
+				</mat-expansion-panel-header>
+			</mat-expansion-panel>
+
+			<mat-expansion-panel>
+				<mat-expansion-panel-header>
+					<mat-panel-title>
+						<mat-slide-toggle (click)="$event.stopPropagation();" [checked]="true">Documentos</mat-slide-toggle>
+					</mat-panel-title>
+				</mat-expansion-panel-header>
+			</mat-expansion-panel>
+		</mat-accordion>
+	</div>
+	<div class="button-validator">
+		<button mat-raised-button type="button" disabled> No Autorizar </button>
+		<button mat-raised-button color=accent type="button" (click)="toFinal()"> Autorizar </button>
+	</div>
+
+
+</div>

@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="div-logo">
+        <img class="logo" src="../assets/images/one_logo.png" alt="">
+    </div>
+
+    <p>Ingrese el código de seguridad que hemos enviado a su celular para continuar con la solicitud de vinculación:</p>
+
+    <br>
+
+    <div>
+        <p>tiempo restante: </p>
+        <div id="counter"> 10:00</div>
+        <mat-progress-bar mode="determinate" value="10"></mat-progress-bar>
+    </div>
+
+    <p>
+        <strong>Ingresa el código</strong>
+    </p>
+
+    <br>
+
+    <div class="transform-number" [formGroup]=modelForm>
+        <input type="text" min="0" max="9" required="required" (keypress)="keyup($event)" id="0" (keyup)="backspace($event)" oneOtp pattern="[0-9]*" inputmode="numeric"
+            minlength="1" maxlength="1" formControlName=requestCode1 [ngModel]="requestCode0"  autocomplete="off" placeholder="&#8226;">
+        <input type="text" min="0" max="9" required="required" (keypress)="keyup($event)" id="1" (keyup)="backspace($event)" oneOtp pattern="[0-9]*" inputmode="numeric"
+            minlength="1" maxlength="1" formControlName=requestCode2 [ngModel]="requestCode1" autocomplete="off" placeholder="&#8226;">
+        <input type="text" min="0" max="9" required="required" (keypress)="keyup($event)" id="2" (keyup)="backspace($event)" oneOtp pattern="[0-9]*" inputmode="numeric"
+            minlength="1" maxlength="1" formControlName=requestCode3 [ngModel]="requestCode2" autocomplete="off" placeholder="&#8226;">
+        <input type="text" min="0" max="9" required="required" (keypress)="keyup($event)" (keyup)="backspace($event)" id="3" oneOtp pattern="[0-9]*" inputmode="numeric"
+            minlength="1" maxlength="1" formControlName=requestCode4 [ngModel]="requestCode3" autocomplete="off" placeholder="&#8226;">
+    </div>
+
+    <div class="button-validator">
+        <button mat-button type="button"(click)="sendOtp()" > Reenviar código </button>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.side-bar-container {
+    padding: 25px;
+    box-shadow: 1px 1px 14px 8px rgba(0, 0, 0, 0.05000000074505806);
+}
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+    &.container-border {
+        margin: 35px auto;
+        box-shadow: 1px 1px 14px 8px rgba(0, 0, 0, 0.05000000074505806);
+        border-radius: 7px;
+    }
+}
+
+@media (max-width:1180px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.spiner-container {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    mat-spinner {
+        position: fixed;
+        display: block;
+        left: calc(50% - 100px/2);
+        top: calc(50% - 100px/2);
+    }
+}

@@ -1,0 +1,20 @@
+@import '~@angular/material/theming';
+@import 'src/one.theme.scss';
+@import 'src/assets/color-palett.scss';
+$primary-color: mat-color($one-app-primary);
+.cam-container {
+    border: 2px solid $primary-color;
+    background-color: #2a9baa0d;
+    width: 400px;
+    margin: 0 auto;
+    video {
+        margin: 0 auto;
+        display: block;
+    }
+    button {
+        margin: 0 auto;
+        margin-bottom: 15px;
+        width: 15%;
+        display: block;
+    }
+}

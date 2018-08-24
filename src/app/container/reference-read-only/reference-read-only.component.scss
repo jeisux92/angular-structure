@@ -1,0 +1,80 @@
+@import '~@angular/material/theming';
+@import 'src/one.theme.scss';
+@import 'src/assets/color-palett.scss';
+$primary-color: mat-color($one-app-primary);
+.container {
+    margin: 30px 0;
+    width: 55vw;
+    .description {
+        pre {
+            color: $primary-color;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            line-height: 24px;
+            width: 666px;
+            text-align: left;
+        }
+    }
+    .div-references {
+        .box {
+            p {
+                color: $primary-color;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: left;
+                padding-left: 20px;
+            }
+        }
+        .reference {
+            border: 1px solid $primary-color;
+            width: 242px;
+            height: 450px;
+            mat-form-field {
+                font-style: italic;
+            }
+            p {
+                color: $primary-color;
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: right;
+                margin-right: 10px;
+            }
+            hr {
+                margin-top: 20px;
+                width: 80%;
+                opacity: 0.7;
+            }
+            .div-confirmado {
+                margin: 0 auto;
+                text-align: center;
+                p {
+                    text-align: center;
+                }
+                img {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+        }
+        .div-inputs {
+            mat-label {
+                padding: 10px 30px;
+                font-style: italic;
+            }
+        }
+    }
+    .div-button {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 35px;
+        button {
+            border-radius: 4px;
+            width: 217px;
+            margin: 15px 0;
+        }
+    }
+}

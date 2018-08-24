@@ -1,0 +1,43 @@
+<div class="bread-crumb">
+  <div fxLayout=row fxLayoutGap="10px" class="fill">
+    <div fxFlex=20 fxLayout=column>
+      <div class="radio"></div>
+      <div class="container-line" [ngClass]="{'fill':step>=2}">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div fxFlex=80 fxLayout=row fxLayoutAlign="flex-start baseline">
+      <span>Registro</span>
+    </div>
+  </div>
+  <div fxLayout=row fxLayoutGap="10px" [ngClass]="{'fill':step>=2}">
+    <div fxFlex=20 fxLayout=column>
+      <div class="radio"></div>
+      <div class="container-line" [ngClass]="{'fill':step>=3}">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div fxFlex=80 fxLayout=row>
+      <span>Validación</span>
+    </div>
+  </div>
+  <div fxLayout=row fxLayoutGap="10px" [ngClass]="{'fill':step>=3}">
+    <div fxFlex=20 fxLayout=column>
+      <div class="radio"></div>
+      <div class="container-line" [ngClass]="{'fill':step>=4}">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div fxFlex=80 fxLayout=row fxLayoutAlign="flex-start baseline">
+      <span>Análisis</span>
+    </div>
+  </div>
+  <div fxLayout=row fxLayoutGap="10px" [ngClass]="{'fill':step>=4}">
+    <div fxFlex=20 fxLayout=column>
+      <div class="radio"></div>
+    </div>
+    <div fxFlex=80 fxLayout=row fxLayoutAlign="flex-start baseline">
+      <span>Formalización</span>
+    </div>
+  </div>
+</div>

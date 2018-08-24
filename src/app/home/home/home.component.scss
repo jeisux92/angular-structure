@@ -1,0 +1,37 @@
+.home-container {
+    img.first-image {
+        width: 100%;
+    }
+    img.cards {
+        padding-top: 60px;
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+    button {
+        display: block;
+        margin: 0 auto;
+        font-size: 25px;
+        margin-bottom: 45px;
+        height: 55px;
+        span {
+            font-size: 25px;
+            font-weight: 500;
+        }
+    }
+    img.second-couple {
+        display: block;
+        width: 100%;
+    }
+    .benefits {
+        background-color: #F3F3F3;
+        .button {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    .footer {
+        display: block;
+        width: 100%;
+    }
+}

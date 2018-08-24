@@ -1,0 +1,68 @@
+@import '~@angular/material/theming';
+@import 'src/one.theme.scss';
+@import 'src/assets/color-palett.scss';
+.container{
+    position: relative;
+    margin: 40px 0px;
+    .description{
+        margin:0 auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        
+        img{
+            width: 83px;
+            height: 35px;          
+        }
+        p{
+            color: $text-strong;
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: -0.1px;
+            line-height: 20px;
+            width: 672px;
+            text-align: left; 
+            word-wrap: break-word;         
+        }
+    }
+    .info-user{
+        margin-top: 40px;
+        width: 80%;
+        margin: 0 auto;
+        .gris{
+            background-color: #f2f2f2;
+        }
+
+        mat-form-field{
+            margin-top: 40px;
+            margin-left: 20px;
+            width: 25%;
+        }
+
+        .info-user-authorization{
+            height: 300px;    
+            overflow-x: hidden;
+            &::-webkit-scrollbar {
+            width: 0.3em;
+            }
+            &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            }
+            &::-webkit-scrollbar-thumb {
+            background-color: darkgrey;
+            outline: 1px solid slategrey;
+            }
+        }
+                         
+    }
+
+    .button-validator{
+        margin: 15px auto;
+        max-width: fit-content;
+        button{
+            margin: 0 15px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+import { Component, OnInit } from '@angular/core';
+import { Router } from '../../../../node_modules/@angular/router';
+import { ReferenceService } from '../../core/services/reference.service';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+
+@Component({
+  selector: 'one-reference',
+  templateUrl: './reference.component.html',
+  styleUrls: ['./reference.component.scss']
+})
+export class ReferenceComponent implements OnInit {
+  referenceForm: FormGroup;
+  constructor(private router: Router, private referenceService: ReferenceService, private fb: FormBuilder ) {
+    this.referenceForm = this.fb.group({
+      firtname: ['', Validators.required],
+      secondname: ['', Validators.required],
+      firtlastname: ['', Validators.required],
+      secondlastname: ['', Validators.required],
+      email: ['', Validators.required],
+      phone: ['', Validators.required],
+    })
+
+   }
+
+  ngOnInit() {
+  }
+  toReadOnly() {
+    this.sendEmailReference();
+    this.router.navigate(['/one/reference-read-only']);
+  }
+
+  sendEmailReference(){
+    let payload = {
+      Type : "Email",
+      Content : "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'><html xmlns='http://www.w3.org/1999/xhtml'><head>    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>    <title>Bienvenido</title>    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700'></head><body yahoo style='font-family: 'Open Sans', sans-serif;margin: 0;padding: 0;min-width: 100%!important;'>    <!--[if (gte mso 9)|(IE)]>        <table width='100%' bgcolor='#f6f8f1' border='0' cellpadding='0' cellspacing='0'>            <tr>                <td>                    <![endif]-->    <table class='content' align='center' cellpadding='0' cellspacing='0' border='0' style='width: 100%;max-width: 500px;'>        <!-- Header don't touch -->        <tr class='header'>            <td>                <div class='header-div' style='height: 243px;width: 100%;background: url(https://storage.googleapis.com/banlinea-qa.appspot.com/one/foto_correo.png);background-repeat: no-repeat;'>                    <table width='100%' align='center' border='0' cellpadding='0' cellspacing='0' class='header-table' style='table-layout: fixed;height: 244px;width: 100%;'>                        <tr>                            <td height='100%' style='padding-top: 84px;'>                                <table width='80%' align='center' border='0' cellpadding='0' cellspacing='0' bgcolor='#FFFFFF' style='padding: 6px 0 0 0;height: 159px;'>                                    <tr>                                        <td height='100%' style='padding: 0 0 0 0;height: 124px;' align='center' class='img-container'>                                            <img src='https://storage.googleapis.com/banlinea-qa.appspot.com/one/logo_accendo_banco.png' alt=''>                                        </td>                                    </tr>                                </table>                            </td>                        </tr>                    </table>                </div>            </td>        </tr>        <!-- Body -->        <tr>            <td class='body'>                <table width='80%' align='center' border='0' cellpadding='0' cellspacing='0' bgcolor='#FFFFFF' style='box-shadow: 0px 6px 11px #bba5a5;'>                    <tr>                        <td height='100%'>                            <table width='90%' align='center' border='0' cellpadding='0' cellspacing='0'>                                <tr>                                    <td height='100%' style='padding: 0 0 0 0;color: #2A9BAA;font-weight: bolder;font-size: 1.4em;' align='center' class='title'>                                        <label> Hola, Andrés Castro Mora</label>                                        <br>                                    </td>                                </tr>                            </table>                        </td>                    </tr>                    <tr>                        <td height='100%' style='padding: 5px 0 20px 0;'>                            <table width='80%' align='center' border='0' cellpadding='0' cellspacing='0'>                                <tr>                                    <td height='100%' style='padding: 0 0 0 0;color: #2A9BAA;' align='center' class='body-text'>                                        <strong>Estás realizando la siguiente solicitud:</strong>                                    </td>                                </tr>                            </table>                        </td>                    </tr>                    <tr>                        <td height='100%' style='padding: 15px 0 20px 0;'>                            <table width='80%' align='center' border='0' cellpadding='0' cellspacing='0'>                                <tr>                                    <td height='100%' style='padding: 0 0 0 0;color: #9B9B9B; font-size: 18px;font-weight: 400;line-height: 22px;width: 259px;'                                        align='center' class='body-text'>                                        Camilo te ha agregado como referencia en Banlinea One, por favor confirmar si realmente lo conoces.                                    </td>                                </tr>                            </table>                        </td>                    </tr>                    <tr>                        <td height='100%' style='padding: 15px 0 20px 0;'>                            <table width='80%' align='center' border='0' cellpadding='0' cellspacing='0'>                                <tr>                                    <td align='center' style='padding-top: 15px;'>                                        <img src='https://storage.googleapis.com/banlinea-qa.appspot.com/one/man.png' style='width: 100px;height: 100px;'>                                    </td>                                </tr>                            </table>                        </td>                    </tr>                    <tr>                        <td height='100%' style='padding: 15px 0 20px 0;'>                            <table width='80%' align='center' border='0' cellpadding='0' cellspacing='0'>                                <tr>                                    <td align='center' style='padding-top: 15px; line-height: 0.4em;'>                                        <p><strong>Nombre:</strong>Andrés Ramírez</p>                                        <p><strong>Celular:</strong>0123456789</p>                                        <p><strong>Correo:</strong>andres.ramirez@banlinea.com</p>                                    </td>                                </tr>                            </table>                        </td>                    </tr>                    <tr>                        <td height='100%' style='padding: 15px 0 25px 0;'>                            <table width='100%' border='0' cellpadding='0' cellspacing='0'>                                <tr>                                    <td height='100%' align='center'>                                        <a href='#' style='padding: 4px 6px; background-color: #FF3750;color: #FFF;width: 32%;border: 1px solid #FF3750;border-radius: 6px;height: 40px;font-size: 1.2em;text-decoration: none'>No, lo conozco</a>                                        <a href='#' style='padding: 4px 6px; background-color: #2D9BA9;color: #FFF;width: 32%;border: 1px solid #2D9BA9;border-radius: 6px;height: 40px;font-size: 1.2em;text-decoration: none'>Si, lo conozco</a>                                    </td>                                </tr>                            </table>                        </td>                    </tr>                </table>            </td>        </tr>        <!-- Footer don't touch -->        <tr>            <td class='footer'>                <table width='80%' align='center' border='0' cellpadding='0' cellspacing='0'>                    <tr>                        <td height='100%' style='padding: 5px 20px 20px 0;'>                            <table width='90%' align='center' border='0' cellpadding='0' cellspacing='0'>                                <tr>                                    <td aling='right' style='padding-top: 15px;padding-left: 80px;'>                                        <p style='color: #005DB9;font-size: 0.6em;'>                                            Power by                                        </p>                                    </td>                                    <td align='left' style='padding-top: 15px;'>                                        <img src='https://storage.googleapis.com/banlinea-qa.appspot.com/one/Banlinea_Logo-1.png' style='width: 100px;height: 40px;'>                                    </td>                                </tr>                            </table>                        </td>                    </tr>                </table>            </td>        </tr>    </table>    <!--[if (gte mso 9)|(IE)]>                </td>            </tr>        </table>        <![endif]--></body></html>",
+      Subject : "Confirmación de referencia - solicitud Accendo Banco",
+      EmailBox : "andres.ramirez@banlinea.com",
+      ApplicationId : "a9928400-17d7-4860-8e40-580f5f9fd424",
+      SmtpConfigId : "11F81B84-4848-443C-B576-FC7D985B0BCC"
+    }
+
+    this.referenceService.sendEmailReference(payload).subscribe(
+      response =>{
+        
+      }
+    )
+  }
+}

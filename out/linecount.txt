@@ -1,0 +1,124 @@
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2018-08-01 18:41:27
+count workspace : c:\Users\GabrielMartínez\Documents\Banlinea\banlinea.one.v2.web
+total files : 112
+total code lines : 12973
+total comment lines : 174
+total blank lines : 346
+
+.editorconfig, code is 11, comment is 1, blank is 2.
+.gitignore, code is 99, comment is 58, blank is 22.
+angular.json, code is 126, comment is 0, blank is 7.
+e2e\protractor.conf.js, code is 23, comment is 2, blank is 3.
+e2e\src\app.e2e-spec.ts, code is 11, comment is 0, blank is 3.
+e2e\src\app.po.ts, code is 9, comment is 0, blank is 2.
+e2e\tsconfig.e2e.json, code is 12, comment is 0, blank is 1.
+package-lock.json, code is 10628, comment is 0, blank is 0.
+package.json, code is 51, comment is 0, blank is 0.
+README.md, code is 14, comment is 5, blank is 13.
+src\app\container\authorization\authorization.component.html, code is 64, comment is 5, blank is 8.
+src\app\container\authorization\authorization.component.scss, code is 54, comment is 1, blank is 5.
+src\app\container\authorization\authorization.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\container\authorization\authorization.component.ts, code is 11, comment is 0, blank is 4.
+src\app\container\container.module.spec.ts, code is 10, comment is 0, blank is 3.
+src\app\container\container.module.ts, code is 29, comment is 0, blank is 4.
+src\app\container\login\login.component.html, code is 20, comment is 0, blank is 5.
+src\app\container\login\login.component.scss, code is 79, comment is 1, blank is 8.
+src\app\container\login\login.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\container\login\login.component.ts, code is 11, comment is 0, blank is 4.
+src\app\container\otp\otp.component.html, code is 27, comment is 0, blank is 7.
+src\app\container\otp\otp.component.scss, code is 67, comment is 4, blank is 14.
+src\app\container\otp\otp.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\container\otp\otp.component.ts, code is 43, comment is 1, blank is 11.
+src\app\container\register\register.component.html, code is 5, comment is 0, blank is 0.
+src\app\container\register\register.component.scss, code is 10, comment is 0, blank is 0.
+src\app\container\register\register.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\container\register\register.component.ts, code is 37, comment is 0, blank is 4.
+src\app\core\core.module.spec.ts, code is 10, comment is 0, blank is 3.
+src\app\core\core.module.ts, code is 21, comment is 0, blank is 2.
+src\app\core\services\chatbot.service.spec.ts, code is 12, comment is 0, blank is 3.
+src\app\core\services\chatbot.service.ts, code is 15, comment is 0, blank is 5.
+src\app\core\services\interceptor.service.spec.ts, code is 12, comment is 0, blank is 3.
+src\app\core\services\interceptor.service.ts, code is 25, comment is 0, blank is 5.
+src\app\core\services\one.service.spec.ts, code is 12, comment is 0, blank is 3.
+src\app\core\services\one.service.ts, code is 29, comment is 0, blank is 3.
+src\app\layout\footer\footer.component.html, code is 2, comment is 0, blank is 0.
+src\app\layout\footer\footer.component.scss, code is 7, comment is 0, blank is 0.
+src\app\layout\footer\footer.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\layout\footer\footer.component.ts, code is 11, comment is 0, blank is 4.
+src\app\layout\layout.module.spec.ts, code is 10, comment is 0, blank is 3.
+src\app\layout\layout.module.ts, code is 20, comment is 0, blank is 1.
+src\app\layout\layout.routing.ts, code is 18, comment is 0, blank is 3.
+src\app\layout\layout\layout.component.html, code is 13, comment is 0, blank is 0.
+src\app\layout\layout\layout.component.scss, code is 16, comment is 0, blank is 2.
+src\app\layout\layout\layout.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\layout\layout\layout.component.ts, code is 11, comment is 0, blank is 4.
+src\app\layout\side-bar\side-bar.component.html, code is 12, comment is 0, blank is 1.
+src\app\layout\side-bar\side-bar.component.scss, code is 16, comment is 0, blank is 0.
+src\app\layout\side-bar\side-bar.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\layout\side-bar\side-bar.component.ts, code is 11, comment is 0, blank is 4.
+src\app\one.component.html, code is 1, comment is 0, blank is 0.
+src\app\one.component.scss, code is 2, comment is 1, blank is 0.
+src\app\one.component.spec.ts, code is 27, comment is 0, blank is 0.
+src\app\one.component.ts, code is 9, comment is 0, blank is 1.
+src\app\one.module.ts, code is 19, comment is 0, blank is 2.
+src\app\one.routing.ts, code is 14, comment is 0, blank is 3.
+src\app\shared\bread-crumb\bread-crumb.component.html, code is 54, comment is 0, blank is 0.
+src\app\shared\bread-crumb\bread-crumb.component.scss, code is 43, comment is 0, blank is 1.
+src\app\shared\bread-crumb\bread-crumb.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\shared\bread-crumb\bread-crumb.component.ts, code is 11, comment is 0, blank is 4.
+src\app\shared\chatbot\chatbot.component.html, code is 21, comment is 0, blank is 0.
+src\app\shared\chatbot\chatbot.component.scss, code is 118, comment is 5, blank is 1.
+src\app\shared\chatbot\chatbot.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\shared\chatbot\chatbot.component.ts, code is 50, comment is 0, blank is 10.
+src\app\shared\directives\otp.directive.spec.ts, code is 7, comment is 0, blank is 1.
+src\app\shared\directives\otp.directive.ts, code is 50, comment is 0, blank is 12.
+src\app\shared\product-info\product-info.component.html, code is 15, comment is 0, blank is 0.
+src\app\shared\product-info\product-info.component.scss, code is 27, comment is 0, blank is 1.
+src\app\shared\product-info\product-info.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\shared\product-info\product-info.component.ts, code is 11, comment is 0, blank is 4.
+src\app\shared\shared.module.spec.ts, code is 10, comment is 0, blank is 3.
+src\app\shared\shared.module.ts, code is 114, comment is 0, blank is 2.
+src\app\shared\switch\switch.component.html, code is 4, comment is 0, blank is 0.
+src\app\shared\switch\switch.component.scss, code is 67, comment is 6, blank is 8.
+src\app\shared\switch\switch.component.spec.ts, code is 20, comment is 0, blank is 5.
+src\app\shared\switch\switch.component.ts, code is 11, comment is 0, blank is 4.
+src\assets\.gitkeep, code is 0, comment is 0, blank is 0.
+src\assets\color-palett.scss, code is 3, comment is 2, blank is 0.
+src\assets\forms\question1.json, code is 4, comment is 0, blank is 0.
+src\assets\forms\question2.json, code is 5, comment is 0, blank is 0.
+src\assets\forms\question3.json, code is 5, comment is 0, blank is 0.
+src\assets\forms\question4.json, code is 4, comment is 0, blank is 0.
+src\assets\forms\question5.json, code is 5, comment is 0, blank is 0.
+src\assets\forms\question6.json, code is 0, comment is 0, blank is 0.
+src\assets\forms\question7.json, code is 0, comment is 0, blank is 0.
+src\assets\forms\question8.json, code is 0, comment is 0, blank is 0.
+src\assets\forms\questions.json, code is 7, comment is 0, blank is 0.
+src\assets\icons\add.png, it is a binary file.
+src\assets\icons\arrow.png, it is a binary file.
+src\assets\icons\check.png, it is a binary file.
+src\assets\icons\Fill1.png, it is a binary file.
+src\assets\icons\warning.png, it is a binary file.
+src\assets\images\credit-card.png, it is a binary file.
+src\assets\images\icon_banlinea_white.png, it is a binary file.
+src\assets\images\one_logo.png, it is a binary file.
+src\browserslist, code is 9, comment is 1, blank is 0.
+src\environments\environment.prod.ts, code is 3, comment is 0, blank is 0.
+src\environments\environment.ts, code is 5, comment is 10, blank is 2.
+src\favicon.ico, it is a binary file.
+src\index.html, code is 15, comment is 0, blank is 1.
+src\karma.conf.js, code is 28, comment is 3, blank is 1.
+src\main.ts, code is 9, comment is 0, blank is 3.
+src\one.theme.scss, code is 31, comment is 0, blank is 8.
+src\polyfills.ts, code is 2, comment is 64, blank is 15.
+src\styles.scss, code is 9, comment is 0, blank is 2.
+src\test.ts, code is 13, comment is 4, blank is 3.
+src\tsconfig.app.json, code is 10, comment is 0, blank is 1.
+src\tsconfig.spec.json, code is 15, comment is 0, blank is 3.
+src\tslint.json, code is 15, comment is 0, blank is 2.
+tsconfig.json, code is 19, comment is 0, blank is 2.
+tslint.json, code is 118, comment is 0, blank is 12.
+===============================================================================

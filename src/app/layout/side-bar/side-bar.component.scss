@@ -1,0 +1,23 @@
+@import '~@angular/material/theming';
+@import 'src/one.theme.scss';
+@import 'src/assets/color-palett.scss';
+$primary-color: mat-color($one-app-primary);
+
+.side-bar {
+    .bread-crumb-container {
+        padding-bottom: 45px;
+        label {
+            color: mat-color($one-app-primary);
+            font-weight: bolder;
+            font-size: 17px;
+        }
+    }
+    hr {
+        border: 1px solid $disabled-text;
+    }
+    .product-info-container {
+        h4 {
+            color: $primary-color;
+        }
+    }
+}

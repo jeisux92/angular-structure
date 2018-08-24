@@ -1,0 +1,9 @@
+@import '~@angular/material/theming';
+// Import your custom theme
+@import 'src/one.theme.scss';
+img {
+    display: block;
+    overflow: hidden;
+    width: 100vw;
+}
+
